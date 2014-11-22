@@ -4,7 +4,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-}	## First - initialise the inverse property
+	## First - initialise the inverse property
 		i <- NULL
 	## Then set and get matrix
     ## Method - set the matrix
@@ -61,3 +61,4 @@ cacheSolve <- function(x, ...) {
 
     ## Return the matrix
 		m
+}
