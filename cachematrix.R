@@ -46,18 +46,18 @@ cacheSolve <- function(x, ...) {
 }m <- x$getInverse()
 
     ## Return the inverse if it is already calculated
-    if( !is.null(m) ) {
+		if( !is.null(m) ) {
             message("getting cached data")
             return(m)
     }
     ## Get the matrix
-    data <- x$get()
+		data <- x$get()
 
     ## Calc the inverse using matrix multiplication
-    m <- solve(data) %*% data
+		m <- solve(data) %*% data
 
     ## Set the inverse to the object
-    x$setInverse(m)
+		x$setInverse(m)
 
     ## Return the matrix
-    m
+		m
